@@ -1,6 +1,0 @@
-The layer_binning has been corrected from (1, 2, 3) to (1, 2, 4, 8)
-
-The ispe & pixi properties are now unique.
-TODO - Don't duplicate the hvcC properties.
-
-The order of the entity ids is starting with the base (binning=1) or the highest resolution.

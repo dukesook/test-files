@@ -1,5 +1,0 @@
-Changes
- 1. The ipco box is clean, each property is unique: (ispe, uncC, cmpd)
-    The hvcC property is unique for each tile. 
- 2. Corrected layer_binning from (1, 2, 3, 4) to (1, 2, 4, 8).
- 3. Added descriptive item names

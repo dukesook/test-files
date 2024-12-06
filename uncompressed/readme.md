@@ -12,26 +12,26 @@ aligned(8) class UncompressedFrameConfigBox extends FullBox('uncC', version, 0) 
   }
   else if (version==0) {
     unsigned int(32) component_count;
-  {
-    unsigned int(16) component_index;
-    unsigned int(8) component_bit_depth_minus_one;
-    unsigned int(8) component_format;
-    unsigned int(8) component_align_size;
-  } [component_count];
-  unsigned int(8) sampling_type;
-  unsigned int(8) interleave_type;
-  unsigned int(8) block_size;
-  bit(1) components_little_endian;
-  bit(1) block_pad_lsb;
-  bit(1) block_little_endian;
-  bit(1) block_reversed;
-  bit(1) pad_unknown;
-  bit(3) reserved = 0;
-  unsigned int(32) pixel_size;
-  unsigned int(32) row_align_size;
-  unsigned int(32) tile_align_size;
-  unsigned int(32) num_tile_cols_minus_one;
-  unsigned int(32) num_tile_rows_minus_one;
+    {
+      unsigned int(16) component_index;
+      unsigned int(8) component_bit_depth_minus_one;
+      unsigned int(8) component_format;
+      unsigned int(8) component_align_size;
+    } [component_count];
+    unsigned int(8) sampling_type;
+    unsigned int(8) interleave_type;
+    unsigned int(8) block_size;
+    bit(1) components_little_endian;
+    bit(1) block_pad_lsb;
+    bit(1) block_little_endian;
+    bit(1) block_reversed;
+    bit(1) pad_unknown;
+    bit(3) reserved = 0;
+    unsigned int(32) pixel_size;
+    unsigned int(32) row_align_size;
+    unsigned int(32) tile_align_size;
+    unsigned int(32) num_tile_cols_minus_one;
+    unsigned int(32) num_tile_rows_minus_one;
   }
 }
 ```
